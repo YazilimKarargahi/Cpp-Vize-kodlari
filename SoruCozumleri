@@ -1,0 +1,250 @@
+////#include <iostream>
+////using namespace std;
+////
+////int main() {
+////   int arr[5];
+////   for (int i = 0; i <= 5; ++i) {
+////       arr[i] = i;
+////    }
+////  for (int i = 0; i < 5; ++i) {
+////        cout << arr[i] << " ";
+////    }
+////    return 0;
+////}
+//
+//////hata var. Çıktıyı söylemeden hatanının neden gerçekleştiğini açıklanıynız.
+////
+//////#include <iostream>
+//////using namespace std;
+//////
+//////class Base {
+//////public:
+//////    void display() {
+//////       cout << "Display from Base" << endl;
+//////    }
+//////};
+//////
+//////class Derived : public Base {
+//////public:
+//////    void display() {
+//////        cout << "Display from Derived" << endl;
+//////    }
+//////};
+//////
+//////int main() {
+//////    Base* b = new Derived();
+//////    b->display();
+//////   delete b;
+//////    return 0;
+//////}
+////
+////// hata yok çıktı display from base.
+////
+////#include <iostream>
+////using namespace std;
+////
+////int main() {
+////   string message = "Merhaba, C++ öğreniyorsunuz!";
+////    int length = message.length;
+////    cout << "Mesaj uzunluğu: " << length << endl;
+////    return 0;
+////}
+////
+//////hata var length() fonksiyonu olmalıydı.
+////
+////
+////
+////soru: c++ dilinde "const" anahtar kelimesi ne anlama gelir ?
+////
+////a) bir değişkenin değerinin değişmeyeceğini belirtir.
+////
+////b) bir değişkenin sabit olmadığını belirtir.
+////
+////c) bir değişkenin büyüklüğünü belirtir.
+////
+////d) bir değişkenin private olduğunu belirtir.
+////
+////doğru cevap : a
+//// 2
+////soru : c++ dilinde "virtual" fonksiyonlar ne işe yarar ?
+////
+////a) fonksiyonların erişimini kontrol eder.
+////
+////b) çok biçimliliği(polymorphism) destekler.
+////
+////c) bellek yönetimini optimize eder.
+////
+////d) nesneler arası bağlantıyı artırır.
+////
+////doğru cevap : b
+////3
+////soru : c++ dilinde "this" işaretçisi neyi temsil eder ?
+////
+////a) sınıfın adını
+////
+////b) ilgili sınıfın bir kopyasını
+////
+////c) ilgili sınıfın adresini
+////
+////d) ilgili sınıfın boyutunu
+////
+////c doğru
+////
+////
+////soru: c++ dilinde bir sınıfın içinde bildirilen ve sadece sınıfın üyeleri tarafından erişilebilen değişkenlere ne denir ?
+////
+////a) public değişkenler
+////
+////b) private değişkenler
+////
+////c) static değişkenler
+////
+////d) const değişkenler
+////
+////
+////soru: c++ dilinde bir sınıfın kurucu fonksiyonu nasıl tanımlanır ?
+////
+////a) constructor classname() { }
+////
+////b) classname() = constructor{ }
+////
+////c) classname() { }
+////
+////d) construct classname() { }
+////
+////doğru cevap : c
+////
+////
+////soru: c++ dilinde bir sınıfın üye fonksiyonları arasında aynı isme ve farklı parametrelere sahip birden fazla fonksiyon tanımlamasına ne denir ?
+////
+////a) overriding
+////
+////b) overloading
+////
+////c) ınheritance
+////
+////d) polymorphism
+////
+////doğru cevap : b
+////
+////
+//////klasik.
+////Soru: Kalıtımın avantajları ve dezavantajları neler olabilir ?
+////
+////Cevap : Kalıtımın avantajları arasında kodun yeniden kullanılabilirliği, kod organizasyonu ve hiyerarşik yapıların oluşturulması bulunur.
+//// Ancak, kalıtım karmaşık bir yapı oluşturabilir ve sınıflar arasındaki bağımlılığı artırabilir.Ayrıca, fazla kalıtım, değişiklikleri yönetmeyi zorlaştırabilir.
+////
+////Soru : C++ dilinde özel(private), korumalı(protected) ve genel(public) erişim belirleyicileri arasındaki farklar nelerdir ?
+////
+////Cevap : private erişim belirleyici sadece aynı sınıf içinde kullanılabilirken, protected erişim belirleyici, aynı sınıf ve bu sınıftan türetilen 
+////alt sınıflar içinde kullanılabilir. public erişim belirleyici ise tüm yerlerden erişilebilirdir.
+////
+////
+////
+////Soru: C++ dilinde bir sınıfın yapılandırıcı ve yıkıcı fonksiyonlarının(constructor ve destructor) görevleri nelerdir ?
+////
+////Cevap : Yapılandırıcı fonksiyon, bir nesne oluşturulduğunda çağrılan fonksiyondur.Bu fonksiyon, nesne oluşturulurken başlangıç durumunu ayarlar.Yıkıcı fonksiyon ise bir nesne bellekten kaldırıldığında çağrılan fonksiyondur.Bu fonksiyon,
+////nesnenin bellekten silinmesi veya kaynakların serbest bırakılması için kullanılır.
+////
+////
+////
+////Soru: C++ dilinde dinamik bellek yönetimi 
+////nasıl yapılır ? new ve delete anahtar kelimeleri hangi amaçlarla kullanılır ?
+////
+////new Anahtar Kelimesi : new anahtar kelimesi, programın çalışma zamanında dinamik bellekte 
+////yeni bir nesne(örneğin, bir sınıf örneği) oluşturmak için kullanılır.Aşağıdaki gibi kullanılır :
+////
+////delete Anahtar Kelimesi : delete anahtar kelimesi, dinamik olarak oluşturulan nesneleri bellekten 
+////serbest bırakmak ve bellek sızıntılarını önlemek için kullanılır.Aşağıdaki gibi kullanılır
+////
+//////1 2 3
+////C++ dilinde "protected" üye belirleyici, sadece aynı sınıf içerisinden erişilebilir. Y
+////C++ dilinde, bir sınıf birden fazla sınıftan kalıtım alabilir. (Doğru / Yanlış) D
+////C++ dilinde "overloading" (aşırı yükleme), aynı isme sahip fakat farklı parametrelerle birden fazla sınıf tanımlama işlemidir. (Doğru / Yanlış) Y
+////4
+////Soru : Bir sınıfın kurucu fonksiyonu, sınıfın üye fonksiyonlarına özel bir erişim sağlar. (Doğru / Yanlış)
+////
+////Cevap : Yanlış. (Yanıt : Yanlış) Bir sınıfın kurucu fonksiyonu,
+////sınıfın üye fonksiyonlarına özel bir erişim sağlamaz, sadece sınıfın özelliklerini başlatmak için kullanılır.
+////5
+////C++ dilinde "while" döngüsü, koşul doğru olduğu sürece çalışır. (Doğru / Yanlış) D
+////
+////C++ dilinde "do-while" döngüsü, koşulu kontrol eder ve ardından döngüyü çalıştırır. Y önce 1 kere çalıştırır.
+////
+////
+////
+////
+////
+////
+////
+////
+////
+////
+//
+//
+//#include <iostream>
+//using namespace std;
+//
+//class Urun {
+//
+//protected:
+//	int UrunKodu;
+//	string Marka;
+//	string isim;
+//public:
+//	int getUrunKodu()
+//	{
+//		return UrunKodu;
+//	};
+//	string getMarka()
+//	{
+//		return Marka;
+//	};
+//	string getIsım()
+//	{
+//		return isim;
+//	};
+//
+//	void setUrunKodu(int uk)
+//	{
+//		UrunKodu = uk;
+//	};
+//
+//	void setMarka(int m)
+//	{
+//	    Marka = m;
+//	};
+//
+//
+//	void setIsım(string i)
+//	{
+//		isim = i;
+//	};
+//
+//};
+//
+//class Elektronik : public Urun {
+//
+//private :
+//	int fiyat;
+//public:
+//	int GetFiyat() {
+//		return fiyat;
+//	};
+//	void SetFiyat(int f)
+//	{
+//		fiyat = f;
+//	}
+//
+//	Elektronik(int a,string b,string c,int d)
+//	{
+//		UrunKodu = a;
+//		Marka = b;
+//		isim = c;
+//		fiyat = d;
+//
+//
+//	}
+//
+//
+//};
