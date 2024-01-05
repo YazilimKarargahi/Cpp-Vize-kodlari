@@ -1,0 +1,84 @@
+#include <iostream>
+
+using namespace std;
+
+template <typename T>
+class ATM {
+private :
+	T bakiye;
+public :
+	ATM(T baslangicBakiye ) : bakiye(baslangicBakiye){}
+
+	void paraCek(T miktar) {
+		if (miktar > 0 && miktar <= bakiye) {
+			bakiye -= miktar;
+			cout << miktar << " TL cekildi. Yeni bakiye : " << bakiye << endl;
+		}
+		else {
+			cout << "Hatali islem" << endl;
+		}
+	}
+
+	void paraYatir(T miktar) {
+		if (miktar > 0) {
+			bakiye += miktar;
+         cout << miktar << " TL eklendi . Yeni bakiye : " << bakiye << endl; 
+
+		}
+		else {
+			cout << "Hatali islem" << endl;
+		}
+	}
+
+	void bakiyeSorgula() {
+ 		cout << "Mevcut bakiye : " << bakiye << "TL"<< endl;
+	}
+
+
+
+
+};
+
+
+
+
+
+
+
+
+
+int main() {
+	// int türünde bir ATM örneği
+	ATM<int> intATM(1000);
+	intATM.paraCek(300);
+	intATM.paraYatir(150);
+	intATM.bakiyeSorgula();
+
+	// double türünde bir ATM örneği
+	ATM<double> doubleATM(500.75);
+	doubleATM.paraCek(200.50);
+	doubleATM.paraYatir(50.25);
+	doubleATM.bakiyeSorgula();
+
+	return 0;
+}
+
+
+//soru: C++ Template ile ATM Uygulaması
+//Sizden, C++ dilinde template kullanarak bir ATM(Automated Teller Machine) uygulaması tasarlamanız istenmiştir.
+//Bu uygulama, farklı veri türleriyle çalışabilen bir ATM simülasyonunu içermelidir.
+//
+//Uygulama Gereksinimleri :
+//ATM adında bir template sınıfı oluşturun.Bu sınıfın parametre olarak alacağı tip, bakiyenin veri tipini temsil etmelidir.
+//
+//ATM sınıfı, başlangıçta belirtilen bakiye miktarıyla başlamalıdır.Sınıfın bir constructor'ı bu başlangıç bakiyesini almalıdır.
+//
+//paraCek adında bir fonksiyon oluşturun.Bu fonksiyon, belirtilen miktarı çekmeli ve bakiyeden düşmelidir.Ancak,
+//çekilen miktarın 0'dan büyük ve bakiyenin üzerinde olup olmadığını kontrol etmelisiniz.
+//Eğer geçerliyse, işlem gerçekleşmeli ve yeni bakiye ekrana yazdırılmalıdır.Geçerli değilse, hata mesajı yazdırılmalıdır.
+//
+//paraYatir adında bir fonksiyon oluşturun.Bu fonksiyon, belirtilen miktarı hesaba yatırmalı ve bakiyeye eklemelidir.
+//
+//Ancak, yatırılan miktarın 0'dan büyük olup olmadığını kontrol etmelisiniz. Eğer geçerliyse, işlem gerçekleşmeli ve 
+//yeni bakiye ekrana yazdırılmalıdır.Geçerli değilse, hata mesajı yazdırılmalıdır.
+//bakiyeSorgula adında bir fonksiyon oluşturun.Bu fonksiyon, mevcut bakiyeyi ekrana yazdırmalıdır.
